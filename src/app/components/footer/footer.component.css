@@ -27,6 +27,14 @@ footer {
     align-items: center;
 }
 
+footer h1 {
+    font-size: 40px;
+    color: transparent;
+    background-image: linear-gradient(to right, #fff 5%, #8a1be6 30%, #fff 70%);
+    background-clip: text;
+    text-align: center;
+}
+
 @media (max-width: 1024px) {
     footer {
         position: absolute;

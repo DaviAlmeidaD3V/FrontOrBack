@@ -2,6 +2,7 @@
 
 
 .Container__quizz {
+    margin: 9% 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -11,12 +12,29 @@
 
 .quizz_logo {
     margin: 0 auto;
-    font-size: 50px;
     color: transparent;
     background-image: linear-gradient(to right, #fff 5%, #8a1be6 30%, #000 70%);
     background-clip: text;
     text-align: center;
-    padding-top: 10%;
+}
+
+.quizz_logo h1 {
+    font-size: 4.5rem;
+}
+
+.quizz_logo a {
+    color: #8a1be6;
+}
+
+.quizz_logo h4 {
+    font-weight: 900;
+    font-size: 30px;
+    color: #c0c1c5;
+}
+
+.quizz_logo span {
+    font-weight: 100;
+    font-size: 20px;
 }
 
 .quizz_questions {
@@ -66,4 +84,8 @@
     color: #dcdde0;
     margin-top: 5%;
     text-align: center;
+}
+
+.quizz_results p {
+    padding-top: 10%;
 }
