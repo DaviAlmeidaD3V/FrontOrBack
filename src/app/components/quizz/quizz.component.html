@@ -1,0 +1,32 @@
+<div class="Container__quizz">
+    <div class="quizz_logo">
+        <h1>Front or BackEnd</h1>
+    </div>
+
+
+    <div *ngIf=!finished class="quizz_questions">
+        <h3>{{ questionSelected.question }} </h3>
+    </div>
+
+    <div *ngIf=!finished class="quizz_options">
+
+        <button
+          *ngFor="let option of questionSelected.options; let i = index"
+          (click)="playerChoose(option.alias)"
+          class="BtnOptions"
+          id="Btn"
+        >
+          {{option.name}}
+        </button>
+    
+    </div>
+
+    <div *ngIf="finished"  class="quizz_results">
+        <h3> Congratulations ! </h3>
+
+        <p>{{ answerSelected }}</p>
+
+    </div>
+
+
+</div>

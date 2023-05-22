@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    gap: 1rem;
+}
+
+.fa-brands {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    transition: 300ms;
+    color: #8a1be6;
+}
+
+@media (max-width:1024px) {
+    header {
+        position: absolute;
+        top: 0;
+    }
+}

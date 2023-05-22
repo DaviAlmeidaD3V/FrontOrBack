@@ -1,0 +1,35 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.fa-brands {
+    font-size: 25px;
+}
+
+.fa-brands:hover {
+    transition: all 400ms ease;
+    color: #8a1be6;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: -15%;
+    height: 12vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
